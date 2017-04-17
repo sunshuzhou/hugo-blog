@@ -54,6 +54,10 @@ title = "USEFUL TOOLS AND COMMANDS"
 - 列表：`screen -ls`
 - 恢复：`screen -r [-d] name`
 
+### tar
+
+- 压缩成.tar.gz：`tar -czvf a.tar.gz abc`
+- 解压缩.tar.gz：`tar -xzvf a.tar.gz`
 
 ## Android
 
