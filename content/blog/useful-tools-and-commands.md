@@ -63,4 +63,3 @@ title = "USEFUL TOOLS AND COMMANDS"
 
 ### adb
 - 列出所有设备： `adb devices`
--

@@ -1,0 +1,39 @@
++++
+date = "2017-04-28T14:28:58+08:00"
+description = ""
+title = "Certificate Transparency"
+
++++
+
+# 背景
+
+# 目标
+
+目标一： Make it impossible for a CA to issue a SSL certificate for a domain without the certificate visible to the owner of that domain.
+CA针对某个域名颁发的证书，对域名拥有者是公开的
+
+目标二： Provide an open auditing and monitoring system that lets any domain or CA determine whether certificates have been mistakenly or maliciously issued.
+提供一个开发的审计和监督系统，允许所有域名和CA决定证书是否被恶意使用
+
+目标三： Protect users (as much as possible) from begin duped by certificates that were mistakenly or maliciously issued.
+尽可能的保护用户不被恶意使用的证书欺骗
+
+可以看出三个目标要达成的目的不同。第一个目标是针对颁发阶段，攻击者不可能申请了某个域名的证书后，不被该域名的拥有者发现，这样从一开始就会避免错误证书的使用。第二个目标是在证书使用过程中，相当于一个举报平台。第三个目标则需要更多的工作才能达到。
+
+
+# 三个模块
+
+## Certificate Logs
+
+日志系统拥有三个重要的特点：
+- 只能追加
+- 使用Merkle Tree Hashes保证安全性：Integrity
+- 公开可查询
+
+全球仅需要大于10个，远小于1000个Certificate Logs。各个日志系统间是独立的，
+
+
+
+# 使用的关键技术
+
+- Merkle Hash Tree
