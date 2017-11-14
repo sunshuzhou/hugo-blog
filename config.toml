@@ -3,15 +3,16 @@ baseurl = "https://sunshuzhou.github.io/"
 languageCode = "zh-cn" # Controls site language
 title = "Daily Notes" # Homepage title and page title suffix
 
-builddrafts         = false
+builddrafts         = true
 canonifyurls        = true
 contentdir          = "content"
 layoutdir           = "layouts"
 publishdir          = "public"
 author              = "Sun Shuzhou"
 pygmentsuseclasses  = true
-#disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
 pluralizelisttitles = false
+hasCJKLanguage      = true
+#disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
 #googleAnalytics     = "UA-123-45"
 
 [permalinks]
@@ -68,3 +69,7 @@ selfintro              = ""                            # appears in the site hea
 # The following are DEPRECATED.
 #gatracker              = "XYZ" # use googleAnalytics instead
 #initials               = "ad"  # displayed on single post page; deprecated in v0.3.0.
+
+
+[blackfriday]
+hrefTargetBlank = true
